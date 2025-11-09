@@ -1,0 +1,414 @@
+
+.header {
+    height: 400px;
+    background-image: url(img.korzina/korzina.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 0px;
+    opacity: 0px;
+
+    &-header {
+        height: 76px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        background-color: $background-color;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    }
+
+
+    &-logo {
+        color: rgb(250, 250, 250);
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        text-align: left;
+    }
+
+    &-enter {
+
+        padding: 8px;
+        border: 1px solid $color-text;
+        border-radius: $borderRadius;
+        font: inherit;
+        width: 288px;
+        height: 42px;
+        color: $secondary-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        background-color: $background-color;
+        flex: none;
+        flex-grow: 0;
+        outline: none;
+        box-sizing: border-box;
+        padding-left: 32px;
+    }
+
+    &-enter::placeholder {
+        color: $secondary-color;
+    }
+    &-enter:focus {
+        border: 3px solid black;
+        transition: all 1s;
+    }
+
+
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: $gap;
+    }
+
+    &-item {
+        color: $secondary-color;
+        display: inline-block;
+        text-decoration: none;
+    }
+    &-item:hover {
+        color: #000;
+       text-decoration: underline;
+       transition: all 1s;
+    }
+
+    &-text {
+        font-style: normal;
+    }
+
+    &-title {
+        color: $secondary-color;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 127px;
+    }
+}
+
+.korzina {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $gap;
+    margin-top: 64px;
+
+    &__form {
+        background: #f7f6f6;
+        border-radius: $borderRadius;
+        grid-column: span 4;
+        height: 556px;
+    }
+
+    &__form-box {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__order {
+        color: $color;
+        font-size: $BaceFontSize;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 42px;
+    }
+
+    &__anketa {
+        padding-top: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__placeholder {
+        display: flex;
+        flex-direction: column;
+        padding-left: 27px;
+        padding-right: 28px;
+        gap: 41px;
+        
+    }
+    &__fio {
+        background: #f7f6f6;
+        padding: 0px;
+        border: none;
+        outline: none;
+        color: $color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-bottom: 1px solid $color-underline;
+        font-family: Montserrat;
+        
+    }
+    &__fio::placeholder {
+        color: #000000;
+        width: 288px;
+    }
+
+    &__mobile {
+        font-family: Montserrat;
+        background: #f7f6f6;
+        padding: 0px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-bottom: 1px solid $color-underline;
+    }
+    &__mobile::placeholder {
+        color: #000;
+    }
+
+    &__id {
+        font-family: Montserrat;
+        padding: 0px;
+        border: none;
+        outline: none;
+        background: #f7f6f6;
+        color: $color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-bottom: 1px solid $color-underline;
+    }
+    &__id::placeholder {
+        color: #000;
+    }
+&__contents {
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    display: none;
+}
+    &__content {
+        grid-column: span 8;
+      
+    }
+    &__contents:target {
+        display: block;
+        border: 1px solid #000;
+        position: absolute;
+        top: 66px;
+        right: 120px;
+        }
+
+    &__itog {
+        color: $color;
+        font-family: Montserrat;
+        font-size: $BaceFontSize;
+        font-weight: 500;
+        line-height: 29px;
+        padding-top: 64px;
+        display: flex;
+        justify-content: center;
+    }
+    &__itogs {
+        padding-top: 24px;
+        justify-content: flex-start;
+    }
+
+    &__formzak {
+        background-color: 1px Inside $color;
+        height: 41px;
+        box-sizing: border-box;
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: $borderRadius;
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        cursor: pointer;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+
+    &__formzak:hover {
+        transition: all 1s;
+        background-color: rgb(4, 4, 4);
+        color: $color-text;
+    }
+
+    &__name-box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &__name-price {
+        color: $color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    
+    &__item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left {
+        display: flex;
+        gap: $gap;
+    }
+    
+    &__img {
+        width: 173px;
+        height: 173px;
+    }
+    
+    &__info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__container-bed {
+        font-weight: 500;
+        font-size: $BaceFontSize;
+        line-height: 29px;
+        color: #000000;
+    }
+
+    &__container-budjet {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #050505;
+    }
+
+    &__container-text {
+
+        color: $color-price;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+    }
+
+    &__link-box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    &__link {
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 210%;
+        text-align: center;
+        text-decoration-line: underline;
+    }
+    &__link:hover {
+        color:rgb(136, 136, 136);
+        transition: all 0.7s;
+    }
+
+    &__number {
+        width: 71px;
+        height: 51px;
+        border-radius: 6px;
+        background: $background;
+        box-sizing: border-box;
+        color: $color;
+        font-size: 14px;
+        font-family: Poppins;
+        font-weight: 600;
+        line-height: 210%;
+        padding-left: 20px;
+        background: $background;
+        outline: none;
+        border: none;
+    }
+    
+
+    &__button-box {
+        display: flex;
+        gap:7px;
+        padding-top: 18px;
+    }
+    
+
+    &__button {
+        width: 200px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-radius: 50px;
+        border: 1px solid $color;
+        width:200px;
+        height: 37px;
+        box-sizing: border-box;
+        color: $color;
+        background: $secondary-color;
+        cursor: pointer;
+    }
+    &__button:hover {
+        width: 220px;
+        transition: all 1s;
+    }
+
+    &__buttons:hover {
+        width: 220px;
+        transition: all 1s;
+        color: #fff;
+        background:#000 ;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        border-radius: 50px;
+        border: 1px solid $color;
+        width: 200px;
+        height: 37px;
+        box-sizing: border-box;
+        color: #000000;
+        background:#fff;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    &__buttons-form {
+        margin-left: 48px;
+        width: 207px;
+    }
+}
+
+.korzina__container-product {
+    color: $color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+}

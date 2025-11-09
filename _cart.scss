@@ -1,0 +1,120 @@
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+
+&__container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 32px;  
+    margin-bottom: 32px;
+}
+
+&__containers {
+row-gap: 48px;
+}
+
+&__container-many {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap;
+}
+
+&__container-price {
+    text-decoration: line-through;
+    color: #888888;
+    font-weight: 500;
+    font-size: $BaceFontSize;
+    line-height: 29px;
+
+}
+
+&__catalog {
+    color: $color;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+&__container-product {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    width: 378px;
+}
+
+&__container-main {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+&__container-product:hover &__container-icons{
+    opacity: 1;
+}
+
+&__container-icons {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    gap: 20px;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+&__container-icon img{
+    transition: transform 0.3s ease;
+}
+&__container-icon:hover img {
+    transform: scale(1.2);
+}
+
+&__container-img {
+    display: flex;
+    width: 378px;
+}
+
+&__container-bed {
+    font-weight: 500;
+    font-size: $BaceFontSize;
+    line-height: 29px;
+    color: #000000;
+    padding-top: 10px;
+}
+
+&__container-budjet {
+    font-weight: 500;
+    font-size: $BaceFontSize;
+    line-height: 29px;
+    color: #050505;
+}
+
+&__container-text {
+    color: rgb(136, 136, 136);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+
+&__link-catalog {
+    color: $color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    transition: all 1s;
+    text-decoration-line: underline;
+}
+&__link-catalog:hover {
+    color: rgb(136, 136, 136);
+    text-decoration: underline;
+}
+}

@@ -1,0 +1,167 @@
+.footer {
+    background-color: rgb(247, 246, 246);
+    padding-top: 32px;
+    padding-bottom: 59px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 64px;
+    width: 100%;
+
+    &__logo {
+        color: $color;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        text-align: left;
+    }
+
+    &__content {
+        display: flex;
+        gap: 179px;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__info {
+        display: flex;
+        gap: 130px;
+        align-items: flex-start;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 78px;
+    }
+
+    &__menu-title {
+        font-weight: 500;
+        font-size: $BaceFontSize;
+        line-height: 29px;
+        margin-bottom: 15px;
+
+    }
+
+    &__menu-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    &__menu-item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+        margin-bottom: 12px;
+
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 139px;
+
+    }
+
+    &__contacts-title {
+        font-weight: 500;
+        font-size: $BaceFontSize;
+        line-height: 29px;
+        margin-bottom: 12px;
+
+    }
+
+    &__contacts-link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888888;
+        text-decoration: none;
+        margin-bottom: 12px;
+    }
+
+    &__social-link {
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    &__social-icons {
+        display: flex;
+        gap: 20px;
+
+    }
+
+    &__social-icon {
+        width: 21px;
+        height: 21px;
+    }
+
+    &__social-icon:hover {
+        filter: brightness(0) saturate(100%);
+        transition: all 0.7s;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    &__infa-text {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+
+    }
+
+    &__mail-input {
+        border: 1px solid #C4C4C4;
+        border-radius: $borderRadius;
+        font: inherit;
+        box-sizing: border-box;
+        padding-left: 25px;
+        width: 260px;
+        height: 40px;
+        color: $primary-color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: left;
+    }
+
+    &__mail-input:focus {
+        transition: all 0.7s;
+        border: 3px solid black;
+    }
+
+    &__button {
+        padding: 8px 16px;
+        border: 1px solid $secondary-color;
+        border-radius: $borderRadius;
+        background: rgba(222, 215, 215, 0.41);
+        font: inherit;
+        cursor: pointer;
+        width: 260px;
+        height: 40px;
+        margin-bottom: 0;
+        color: $color;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &__button:hover {
+        background: #000;
+        color: #fff;
+        transition: all 1s;
+    }
+}
